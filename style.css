@@ -1,0 +1,131 @@
+.header {
+  width: fit-content;
+  height: 20px;
+}
+
+.player {
+  position: absolute;
+  left: 296px;
+  top: 162px;
+}
+
+.com {
+  position: absolute;
+  left: 865px;
+  top: 162px;
+}
+
+.batu-1 {
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 282px;
+  top: 247px;
+  z-index: 999;
+}
+
+.batu-1 img {
+  width: 100px;
+}
+
+.kertas-1 {
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 282px;
+  top: 400px;
+  z-index: 999;
+}
+
+.kertas-1 img {
+  width: 100px;
+}
+
+.gunting-1 {
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 282px;
+  top: 600px;
+  z-index: 999;
+}
+
+.gunting-1 img {
+  width: 100px;
+}
+
+.batu-2 {
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 821px;
+  top: 247px;
+  z-index: 999;
+}
+
+.batu-2 img {
+  width: 100px;
+}
+
+.kertas-2 {
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 821px;
+  top: 400px;
+  z-index: 999;
+}
+
+.kertas-2 img {
+  width: 100px;
+}
+
+.gunting-2 {
+  position: absolute;
+  width: 128px;
+  height: 92px;
+  left: 821px;
+  top: 600px;
+  z-index: 999;
+}
+
+.gunting-2 img {
+  width: 100px;
+}
+
+.vs {
+  position: absolute;
+  width: 296px;
+  height: 186px;
+  left: 589px;
+  top: 419px;
+}
+
+.vs img {
+  width: 100px;
+}
+
+.rec {
+  /* display: none; */
+  position: absolute;
+  width: 271.11px;
+  height: 166.93px;
+  left: 561px;
+  top: 489.89px;
+
+  background: #4c9654;
+  border-radius: 10px;
+  transform: rotate(-28.87deg);
+}
+
+.refresh {
+  position: absolute;
+  width: 77px;
+  height: 71px;
+  left: 589px;
+  top: 600px;
+}
+
+.refresh img {
+  width: 100px;
+}
