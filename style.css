@@ -1,13 +1,14 @@
 .header {
+  display: flex;
   width: fit-content;
-  height: 20px;
+  height: 100px;
   font-family: "Open Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 49px;
   letter-spacing: 0.1em;
-  text-align: center;
+  align-items: center;
 }
 
 .header h2 {
@@ -227,7 +228,7 @@
   position: absolute;
   width: 296px;
   height: 186px;
-  left: 589px;
+  left: 559px;
   top: 419px;
 }
 
@@ -260,9 +261,9 @@
   width: 77px;
   height: 71px;
   left: 589px;
-  top: 600px;
+  top: 700px;
 }
 
 .refresh img {
-  width: 100px;
+  width: 50px;
 }

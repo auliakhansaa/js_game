@@ -35,6 +35,18 @@ class Game {
         this.controlKotakKeterangan = document.querySelector(
             ".rec"
         );
+
+        this.controlRefresh = document.querySelector( ".refresh img");
+        this.controlRefresh.addEventListener("click",()=>{
+            console.log('refresh');
+            this.controlBatuBack.style.display = "none";
+            this.controlKertasBack.style.display = "none";
+            this.controlGuntingBack.style.display = "none";
+            this.controlBatu2Back.style.display = "none";
+            this.controlKertas2Back.style.display = "none";
+            this.controlGunting2Back.style.display = "none";
+            this.controlKotakKeterangan.style.display = "none";
+        });
     
         //   this.controlAngka = document.querySelector("#game-control .angka");
         //   this.controlAngka.textContent = 0;
@@ -111,7 +123,7 @@ class Game {
   
           }
         
-      }, 2000); // 500 = 2 detik
+      }, 500); // 500 = 2 detik
    
     }
 
@@ -132,9 +144,34 @@ class Game {
     
           // this.controlAngka.style.color = null;
     
-          this.com(angka,nilai);
+        //   this.com(angka,nilai);
+        if(angka===nilai){
+            this.controlKotakKeterangan.style.display="block";
+            this.controlKeterangan.style.display ="block";
+            this.controlGunting2Back.style.display ="block";
+          console.log(angka);
+          console.log(nilai);
+          this.controlKeterangan.textContent="DRAW";
+          } 
           
-        }, 2000); // 500 = 2 detik
+          else if(angka==2){
+              this.controlKotakKeterangan.style.display="block";
+              this.controlKeterangan.style.display ="block";
+              this.controlBatu2Back.style.display ="block";
+          console.log(angka);
+          console.log(nilai);
+          this.controlKeterangan.textContent="COM WON";
+  
+          }else if(angka==3){
+              this.controlKotakKeterangan.style.display="block";
+              this.controlKeterangan.style.display ="block";
+              this.controlKertas2Back.style.display ="block";
+          console.log(angka);
+          console.log(nilai);
+          this.controlKeterangan.textContent="PLAYER WON";
+  
+          }
+        }, 500); // 500 = 2 detik
   
       }
 
@@ -154,37 +191,62 @@ class Game {
           clearInterval(interval);
     
           // this.controlAngka.style.color = null;
-    
-          this.com(angka,nilai);
-        }, 2000); // 500 = 2 detik
+          if(angka===nilai){
+            this.controlKotakKeterangan.style.display="block";
+            this.controlKeterangan.style.display ="block";
+            this.controlKertas2Back.style.display ="block";
+          console.log(angka);
+          console.log(nilai);
+          this.controlKeterangan.textContent="DRAW";
+          } 
+          
+          else if(angka==2){
+              this.controlKotakKeterangan.style.display="block";
+              this.controlKeterangan.style.display ="block";
+              this.controlGunting2Back.style.display ="block";
+          console.log(angka);
+          console.log(nilai);
+          this.controlKeterangan.textContent="COM WON";
+  
+          }else if(angka==3){
+              this.controlKotakKeterangan.style.display="block";
+              this.controlKeterangan.style.display ="block";
+              this.controlBatu2Back.style.display ="block";
+          console.log(angka);
+          console.log(nilai);
+          this.controlKeterangan.textContent="PLAYER WON";
+  
+          }
+        //   this.com(angka,nilai);
+        }, 500); // 500 = 2 detik
       }
   
-    com(angka,nilai){
-        if(angka===nilai){
-          this.controlKotakKeterangan.style.display="block";
-          this.controlKeterangan.style.display ="block";
-        console.log(angka);
-        console.log(nilai);
-        this.controlKeterangan.textContent="player won";
-        } 
+    // com(angka,nilai){
+    //     if(angka===nilai){
+    //       this.controlKotakKeterangan.style.display="block";
+    //       this.controlKeterangan.style.display ="block";
+    //     console.log(angka);
+    //     console.log(nilai);
+    //     this.controlKeterangan.textContent="player won";
+    //     } 
         
-        else if(angka > nilai){
-            this.controlKotakKeterangan.style.display="block";
-            this.controlKeterangan.style.display ="block";
-        console.log(angka);
-        console.log(nilai);
-        this.controlKeterangan.textContent="Com Won";
+    //     else if(angka > nilai){
+    //         this.controlKotakKeterangan.style.display="block";
+    //         this.controlKeterangan.style.display ="block";
+    //     console.log(angka);
+    //     console.log(nilai);
+    //     this.controlKeterangan.textContent="Com Won";
 
-        }else{
-            this.controlKotakKeterangan.style.display="block";
-            this.controlKeterangan.style.display ="block";
-        console.log(angka);
-        console.log(nilai);
-        this.controlKeterangan.textContent="Draw";
+    //     }else{
+    //         this.controlKotakKeterangan.style.display="block";
+    //         this.controlKeterangan.style.display ="block";
+    //     console.log(angka);
+    //     console.log(nilai);
+    //     this.controlKeterangan.textContent="Draw";
 
-        }
+    //     }
 
-    }
+    // }
    
   }
 
