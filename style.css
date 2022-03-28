@@ -1,20 +1,56 @@
 .header {
   width: fit-content;
   height: 20px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.header h2 {
+  display: inline;
+  color: #f9b23d;
 }
 
 .player {
   position: absolute;
-  left: 296px;
+  left: 266px;
   top: 162px;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 
 .com {
   position: absolute;
-  left: 865px;
+  left: 820px;
   top: 162px;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
-
+.batu-back {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  width: 138px;
+  left: 282px;
+  top: 237px;
+  height: 152px;
+  opacity: 50%;
+}
 .batu-1 {
   position: absolute;
   width: 128px;
@@ -24,21 +60,55 @@
   z-index: 999;
 }
 
+.batu-1 button {
+  background: transparent;
+  padding: 20px;
+  border: none;
+}
+
+.batu-1 button:hover {
+  background: white;
+  opacity: 0.5;
+  border: none;
+}
+
 .batu-1 img {
   width: 100px;
 }
-
+.kertas-back {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  width: 138px;
+  left: 282px;
+  top: 400px;
+  height: 152px;
+  opacity: 50%;
+}
 .kertas-1 {
   position: absolute;
   width: 128px;
   height: 92px;
-  left: 282px;
+  left: 292px;
   top: 400px;
   z-index: 999;
 }
 
 .kertas-1 img {
-  width: 100px;
+  width: 80px;
+}
+
+.kertas-1 button {
+  background: transparent;
+  padding: 20px;
+  border: none;
+}
+
+.kertas-1 button:hover {
+  background: white;
+  opacity: 0.5;
+  border: none;
 }
 
 .gunting-1 {
@@ -47,11 +117,47 @@
   height: 92px;
   left: 282px;
   top: 600px;
-  z-index: 999;
+}
+
+.gunting-back {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  width: 138px;
+  left: 282px;
+  top: 600px;
+  height: 152px;
+  opacity: 50%;
 }
 
 .gunting-1 img {
   width: 100px;
+}
+
+.gunting-1 button {
+  background: transparent;
+  padding: 20px;
+  border: none;
+  z-index: 999;
+}
+
+.gunting-1 button:hover {
+  background: white;
+  opacity: 0.5;
+  border: none;
+}
+
+.batu2-back {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  width: 138px;
+  left: 801px;
+  top: 217px;
+  height: 152px;
+  opacity: 50%;
 }
 
 .batu-2 {
@@ -67,17 +173,41 @@
   width: 100px;
 }
 
+.kertas2-back {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  width: 138px;
+  left: 801px;
+  top: 380px;
+  height: 152px;
+  opacity: 50%;
+}
+
 .kertas-2 {
   position: absolute;
   width: 128px;
   height: 92px;
-  left: 821px;
+  left: 831px;
   top: 400px;
   z-index: 999;
 }
 
 .kertas-2 img {
-  width: 100px;
+  width: 80px;
+}
+
+.gunting2-back {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 40%;
+  width: 138px;
+  left: 801px;
+  top: 580px;
+  height: 152px;
+  opacity: 50%;
 }
 
 .gunting-2 {
@@ -106,13 +236,20 @@
 }
 
 .rec {
-  /* display: none; */
+  display: none;
   position: absolute;
   width: 271.11px;
   height: 166.93px;
-  left: 561px;
-  top: 489.89px;
-
+  left: 480px;
+  top: 400px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  color: white;
   background: #4c9654;
   border-radius: 10px;
   transform: rotate(-28.87deg);
